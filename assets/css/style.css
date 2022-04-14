@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Exo, sans-serif;
+}
+
+:root {
+  --primary-color: #251e3694;
+}
+
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #ffff;
+}
+
+
+
+.home {
+  position: relative;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #000000 60%,
+    rgba(0, 0, 0, 0.774) 100%
+  );
+  min-height: calc(100vh - 60px);
+  color: white;
+  margin: 15px;
+  padding: 40px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 15px #00000060;
+  border: 1.5px solid white;
+}
+
+.home > h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.home > div {
+  display: flex;
+  justify-content: center;
+}
+
+.Home-container {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 350px) {
+  .Home-container {
+    justify-content: unset;
+  }
+}
+
+.ObraLista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px 50px;
+}
+
+@media (max-width: 1220px) {
+  .ObraLista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 870px) {
+  .ObraLista {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ObraCardItem,
+.ObraListaItem {
+  background-color: var(--primary-color);
+  border: 1.5px solid white;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 315px;
+  display: flex;
+  box-shadow: 5px 5px 5px 5px #210e313f;
+  justify-content: space-around;
+  margin: 0.5rem;
+}
+
+.ObraCardItem {
+  margin: 20px 0;
+  height: 160px;
+  width: 400px;
+}
+
+
+
+
+
+.ObraCardItem > div,
+.ObraListaItem > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.ObraListaItem__nome,
+.ObraCardItem__nome {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.ObraListaItem__sinopse,
+.ObraCardItem__sinopse {
+  font-size: 0.7em;
+  padding: 0.7rem;
+  height: 65%;
+}
+
+
+.ObraListaItem__foto {
+  margin: 0.6rem;
+  width: 150px;
+  border-radius: 10rem;
+  border: 3px solid black;
+  margin-right: -50px;
+  box-shadow: 0px 0px 15px #00000060;
+}
+
+.ObraCardItem__foto {
+  margin: 0.6rem;
+  width: 150px;
+  border-radius: 10rem;
+  border: 3px solid black;
+  box-shadow: 0px 0px 15px #00000070;
+}
+
+
+
