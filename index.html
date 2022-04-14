@@ -9,17 +9,27 @@
   </head>
   <body>
     <section class="home">
+      
+      <!-- Pesquisa -->
+      <h2>Pesquisar Obra</h2>
+      <div class="obra-escolhida-espaco">
+        <div id="obra-escolhida-input-espaco">
+          <input
+            type="number"
+            id="idObra"
+            placeholder="Digite o ID da paleta e clique em 'Escolher'"
+          />
+          <button id="idObraButton" onclick="findByIdObras()">Escolher</button>
+        </div>
+        <div id="obraEscolhida"></div>
+      </div>
+
       <!-- Obras -->
       <h2>Obras Escolhidas:</h2>
       <div class="Home-container">
-        <div class="ObraListaItem">
-          <div>
-            <div class="ObraListaItem__nome">Youjo Senki</div>
-            <div class="ObraListaItem__sinopse">Quam vulputate dignissim suspendisse in est ante in nibh mauris.</div>
-            <div class="ObraListaItem__nota">5 <img src="./assets/img/star.svg" alt="estrela" width="14px"></div>
-          </div>
-            <img class="ObraListaItem__foto" src="./assets/img/tanya.jpg" alt="Youjo Senki" />
-        </div>
+        <div class="ObraLista" id="obraList"></div>
+
+      </div>
       </div>
     </section>
 
