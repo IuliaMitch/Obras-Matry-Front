@@ -42,7 +42,7 @@ async function findByIdObras() {
     <div class="ObraCardItem__sinopse">
       ${obra.sinopse}
     </div>
-    <div class="ObraCardItem__nota">Nota: ${obra.nota}</div>
+    <div class="ObraCardItem__nota">${obra.nota} <img src="./assets/img/star.svg" alt="estrela" width="14px"></div>
   </div>
   <img
     src="${obra.foto}"
