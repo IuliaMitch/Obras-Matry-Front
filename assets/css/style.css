@@ -170,4 +170,47 @@ html {
   }
 }
 
+.obra-escolhida-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#idObra {
+  padding: 0.3rem;
+  width: 260px;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+}
+
+
+#idObraButton {
+  background-color: transparent;
+  color: white;
+  padding: 0.3rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+#idObraButton:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+
+#obra-escolhida-input-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 
