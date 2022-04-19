@@ -53,3 +53,16 @@ async function findByIdObras() {
 }
 
 findAllObras();
+
+function openModalNew () {
+  document.querySelector(".modal-overlay").style.display = "flex";
+}
+
+function closeModalNew() {
+  document.querySelector(".modal-overlay").style.display = "none";
+
+  let nome = (document.querySelector("#nome").value = "");
+  let sinopse = (document.querySelector("#sinopse").value = "");
+  let nota = (document.querySelector("#nota").value = "");
+  let foto = (document.querySelector("#foto").value = "");
+}
