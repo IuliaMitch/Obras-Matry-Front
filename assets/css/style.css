@@ -23,6 +23,84 @@ html {
 }
 
 
+/* Header */
+
+.Header {
+  max-width: 1110px;
+  margin: 0 auto 25px auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0 35px 0;
+}
+
+.Logo__icone {
+  margin: 0.4rem;
+  border-radius: 2rem;
+  position: absolute;
+  left: -20px;
+  top: -15px;
+}
+.Logo {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  width: 340px;
+  height: 45px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.logo__titulo {
+  position: absolute;
+  left: 85px;
+  font-family: "Exo";
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.Stars {
+  position: relative;
+}
+
+.Stars__icone {
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1220px) {
+  .Header {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 840px) {
+  .Header {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Header {
+    max-width: 250px;
+  }
+
+  .row {
+    column-gap: 20px;
+  }
+
+  .logo__titulo {
+    font-size: 1rem;
+  }
+}
+
+/* Home */
+
 
 .home {
   position: relative;
