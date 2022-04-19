@@ -58,7 +58,45 @@
 
       <!-- Modal -->
 
-      
+      <section class="modal-overlay" id="overlay">
+        <div class="div-form">
+          <div class="modal-header">
+            <legend id="title-modal">
+              <strong>
+              Adicionar Obra
+              </strong>
+            </legend>
+            <a class="botao-fechar" onclick="closeModalNew()">x</a>
+          </div>
+
+          <div id="form">
+              <input type="hidden" id="id">
+            <fieldset>
+              <input type="text" name="nome" id="nome" placeholder="Digite o nome" required/>
+              <label for="nome"><strong>Nome</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="sinopse" id="sinopse" placeholder="Digite a sinopse" rows="5" required/>
+              <label for="sinopse"><strong>Sinopse</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="foto" id="foto" placeholder="Digite o link da Foto" required/>
+              <label for="foto"><strong>Foto</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="number" name="nota" id="nota" placeholder="Digite de 1 a 5" required/>
+              <label for="nota"><strong>Nota</strong></label>
+            </fieldset>
+            <div id="btn-container">
+                <button id="button-modal" onclick="createObra()"><strong>Adicionar</strong></button>
+            </div>
+            
+          </div>
+        </div>
+      </section>
 
       <!-- Obras -->
       <h2>Obras Escolhidas:</h2>
