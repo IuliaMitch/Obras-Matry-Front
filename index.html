@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="shortcurt icon" type="image/svg" href="./assets/img/star.svg">
+    <title>Obras-Primas da Iu</title>
+  </head>
+  <body>
+    <section class="home">
+      <!-- Header -->
+      <header class="home-header Header">
+        <div class="row">
+          <div class="header-logo Logo">
+            <img
+              src="./assets/img/matry.gif"
+              width="90px"
+              alt="logo Obras da Matry"
+              class="logo-icone"
+            />
+            <span class="logo-titulo">Buy Obras</span>
+          </div>
+          <div class="header-options Option">
+        
+              <input
+              type="text"
+              id="search-input"
+              placeholder="Digite o ID da paleta"
+            />
+            <button id="search-button" onclick="findByIdObras()"><i class="bi bi-search-heart"></i></button>
+
+          </div>
+        </div>
+      </header>
+
+      <!-- POST -->
+
+      <section class="options">
+        <span class="msg-alert"></span>
+        <div class="btns-list-cad">
+          <a href="/" class="openModalNew list-all"><b>Listar tudo</b></a>
+          <button class="openModalNew" type="button" onclick="openModalNew()"><strong>Adicionar Obra</strong></button>
+        
+        </div>
+      </section>
+
+
+      <!-- Modal -->
+
+      <section class="modal-overlay" id="overlay">
+        <div class="div-form">
+          <div class="modal-header">
+            <legend id="title-modal">
+              <strong>
+              Adicionar Obra
+              </strong>
+            </legend>
+            <a class="botao-fechar" onclick="closeModalNew()">x</a>
+          </div>
+
+          <div id="form">
+              <input type="hidden" id="id">
+            <fieldset>
+              <input type="text" name="nome" id="nome" placeholder="Digite o nome" required/>
+              <label for="nome"><strong>Nome</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="sinopse" id="sinopse" placeholder="Digite a sinopse" rows="5" required/>
+              <label for="sinopse"><strong>Sinopse</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="text" name="foto" id="foto" placeholder="Digite o link da Foto" required/>
+              <label for="foto"><strong>Foto</strong></label>
+            </fieldset>
+
+            <fieldset>
+              <input type="number" name="nota" id="nota" placeholder="Digite de 1 a 5" required/>
+              <label for="nota"><strong>Nota</strong></label>
+            </fieldset>
+            <div id="btn-container">
+                <button id="button-modal" onclick="submitObra()"><strong>Adicionar</strong></button>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal de Delete -->
+
+      <section class="modal-overlay" id="overlay-delete">
+        <div class="div-form">
+          <div class="modal">
+            <div class="modal-header">
+              <legend>
+                <strong>
+                  Confirmação de deleção
+                </strong>
+              </legend>
+              <a class="botao-fechar" onclick="closeModalDelete()">x</a>
+            </div>
+            <div class="modal-body-delete">
+              <p>Deseja realmente apagar essa paleta?</p>
+              <div class="btns-delete">
+                <button class="btn-delete-no btn-delete" onclick="closeModalDelete()">Não</button>
+                <button class="btn-delete-yes btn-delete">Sim</button>
+              </div>
+            </div>
+        </div>
+
+        </div>
+      </section>
+
+      <!-- Obras -->
+      <h2>Obras Escolhidas:</h2>
+      <div class="home-container">
+        <div class="obra-list" id="obraList"></div>
+      </div>
+      <div id="chosen-obra"></div>
+    </div>
+
+   <div class="footer">
+    <footer>
+      <h4>Dev Iu</h4>
+      <section id="bottons">
+          
+      <a href="https://github.com/IuliaMitch" Target="_blank">Github</a>
+      <a href="https://www.linkedin.com/in/iulia-mitch-f-dos-santos-29b015230/" target="_blank">Linkedin</a>
+      </section>
+  </footer>
+   </div>
+    </section>
+
+
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
