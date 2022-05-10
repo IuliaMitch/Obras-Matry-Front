@@ -1,4 +1,4 @@
-const baseURL = "http://localhost:3000/obras";
+const baseURL = "https://b-okina-toshokan.onrender.com/obras";
 
 async function findAllObras() {
   const response = await fetch(`${baseURL}/todas-obras`);
